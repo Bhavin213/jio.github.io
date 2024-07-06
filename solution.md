@@ -17,21 +17,33 @@
        - Add the Docker APT repository:
          ```bash
             sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-     - Installing Docker
-       - Update the package list and install required packages:
+       - Update the package list again:
          ```bash
             sudo apt update
-            sudo apt install apt-transport-https ca-certificates curl software-properties-common 
-     - Installing Docker
-       - Update the package list and install required packages:
+       - Install Docker:
+         ```bash
+            sudo apt install docker-ce
+       - Check Docker installation:
+         ```bash
+            sudo systemctl status docker
+
+     - Installing Jenkins
+       - Add the Jenkins repository key to the system:
+         ```bash
+            curl -fsSL https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+       - Add the Jenkins repository:
+         ```bash
+            sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+       - Update the package list:
          ```bash
             sudo apt update
-            sudo apt install apt-transport-https ca-certificates curl software-properties-common
-     - Installing Docker
-       - Update the package list and install required packages:
+       - Install Jenkins:
          ```bash
-            sudo apt update
-            sudo apt install apt-transport-https ca-certificates curl software-properties-common                                                              
+            sudo apt install jenkins
+       - Start Jenkins:
+         ```bash
+            sudo systemctl start jenkins
+                                                        
    ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day06/image/task1.png)
 
 2. **Write a Blog or Article:**
