@@ -51,6 +51,7 @@
            ```bash
               sudo apt install default-jre
 
+   Output
    ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day06/image/task1.png)
 
 2. **Write a Blog or Article:**
