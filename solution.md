@@ -11,6 +11,27 @@
          ```bash
             sudo apt update
             sudo apt install apt-transport-https ca-certificates curl software-properties-common 
+       - Add Docker’s official GPG key:
+         ```bash
+            curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -          
+       - Add the Docker APT repository:
+         ```bash
+            sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+     - Installing Docker
+       - Update the package list and install required packages:
+         ```bash
+            sudo apt update
+            sudo apt install apt-transport-https ca-certificates curl software-properties-common 
+     - Installing Docker
+       - Update the package list and install required packages:
+         ```bash
+            sudo apt update
+            sudo apt install apt-transport-https ca-certificates curl software-properties-common
+     - Installing Docker
+       - Update the package list and install required packages:
+         ```bash
+            sudo apt update
+            sudo apt install apt-transport-https ca-certificates curl software-properties-common                                                              
    ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day06/image/task1.png)
 
 2. **Write a Blog or Article:**
