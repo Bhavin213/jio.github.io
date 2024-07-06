@@ -52,7 +52,10 @@
               sudo apt install default-jre
 
    Output
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day06/image/task1.png)
+   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day07/image/task1.png)
+
+   Output (Jenkins-UI)
+   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day07/image/task1-2.png)
 
 2. **Write a Blog or Article:**
    - Write a small blog or article on how to install these tools using package managers on Ubuntu and CentOS.
@@ -157,8 +160,8 @@ Systemctl is used to examine and control the state of the “systemd” system a
    - Use journalctl to analyze the logs of the Docker and Jenkins services. Post your findings.
 
    **Answer**
-    - Enable Docker to start on boot:
+    - Docker Logs:
    ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day07/image/task6.png)
 
-    - Disable Jenkins from starting on boot:
+    - Jenkins Logs:
    ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day07/image/task6-1.png)
