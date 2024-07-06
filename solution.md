@@ -98,7 +98,7 @@ Systemctl is used to examine and control the state of the “systemd” system a
    **Answer**
     - Understanding the `systemctl` and `service` Commands
       - Both `systemctl` and `service` commands are used to manage system services in Linux, but they differ in terms of usage, functionality, and the system architectures they support.
-      - `systemctl` Command
+      - **`systemctl` Command**
         - `systemctl` is a command used to introspect and control the state of the `systemd` system and service manager. It is more modern and is used in systems that use `systemd` as their init system, which is common in many contemporary Linux distributions.
         - Examples:
           - Check the status of the Docker service:
@@ -114,7 +114,7 @@ Systemctl is used to examine and control the state of the “systemd” system a
             ```bash
                sudo systemctl enable jenkins
              
-      - 'service' Command
+      - **`service` Command**
         - 'service' is a command that works with the older 'init' systems (like SysVinit). It provides a way to start, stop, and check the status of services. While it is still available on systems using 'systemd' for backward compatibility, its usage is generally discouraged in favor of 'systemctl'.
         - Examples:
           - Check the status of the Docker service:
