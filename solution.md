@@ -6,7 +6,7 @@
    - Install Docker and Jenkins on your system from your terminal using package managers.
 
    **Answer**
-     - **Installing Docker**
+     - **First-Installing Docker**
        - Update the package list and install required packages:
          ```bash
             sudo apt update
