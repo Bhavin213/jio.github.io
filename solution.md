@@ -80,19 +80,60 @@ Systemctl is used to examine and control the state of the “systemd” system a
    - Check the status of the Docker service on your system (ensure you have completed the installation tasks above).
 
    **Answer**
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day06/image/task1.png)
+   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day07/image/task5.png)
 
 2. **Manage Jenkins Service:**
    - Stop the Jenkins service and post before and after screenshots.
 
    **Answer**
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day06/image/task1.png)
+   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day07/image/taskj2.png)
 
 3. **Read About Systemctl vs. Service:**
    - Read about the differences between the `systemctl` and `service` commands.
    - Example: `systemctl status docker` vs. `service docker status`.
 
-   For reference, read [this article](https://www.howtogeek.com/devops/how-to-check-if-the-docker-daemon-or-a-container-is-running/#:~:text=Checking%20With%20Systemctl&text=Check%20what%27s%20displayed%20under%20%E2%80%9CActive,running%20sudo%20systemctl%20start%20docker%20).
+   **Answer**
+    - Understanding the `systemctl` and `service` Commands
+      - Both `systemctl` and `service` commands are used to manage system services in Linux, but they differ in terms of usage, functionality, and the system architectures they support.
+      - `systemctl` Command
+        - `systemctl` is a command used to introspect and control the state of the `systemd` system and service manager. It is more modern and is used in systems that use `systemd` as their init system, which is common in many contemporary Linux distributions.
+        - Examples:
+          - Check the status of the Docker service:
+            ```bash
+               sudo systemctl status docker    
+          - Start the Jenkins service:
+            ```bash
+               sudo systemctl start jenkins 
+          - Stop the Docker service:
+            ```bash
+               sudo systemctl stop docker
+          - Enable the Jenkins service to start at boot:
+            ```bash
+               sudo systemctl enable jenkins
+             
+      - 'service' Command
+        - 'service' is a command that works with the older 'init' systems (like SysVinit). It provides a way to start, stop, and check the status of services. While it is still available on systems using 'systemd' for backward compatibility, its usage is generally discouraged in favor of 'systemctl'.
+        - Examples:
+          - Check the status of the Docker service:
+            ```bash
+               sudo service docker status    
+          - Start the Jenkins service:
+            ```bash
+               sudo service jenkins start
+          - Stop the Docker service:
+            ```bash
+               sudo service docker stop
+
+      - **Key Differences**
+        - 1 System Architecture:
+          - `systemctl` works with `systemd`.
+          - `service` works with SysVinit and is compatible with `systemd` for backward compatibility.    
+        - 2 Functionality:
+          - `systemctl` offers more functionality and control over services, including management of the service's state (start, stop, restart, reload), enabling/disabling services at boot, and querying detailed service status.
+          - `service` provides basic functionality for managing services, such as starting, stopping, and checking the status of services.
+        - 3 Syntax and Usage:
+          - `systemctl` uses a more unified syntax for managing services.
+          - `service` has a simpler and more traditional syntax.
 
 ### Additional Tasks
 
@@ -100,16 +141,24 @@ Systemctl is used to examine and control the state of the “systemd” system a
    - Write a script to automate the starting and stopping of Docker and Jenkins services.
 
    **Answer**
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day06/image/task1.png)
+   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day07/image/task4.png)
 
 5. **Enable and Disable Services:**
    - Use systemctl to enable Docker to start on boot and disable Jenkins from starting on boot.
 
    **Answer**
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day06/image/task1.png)
+    - Enable Docker to start on boot:
+   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day07/image/task5.png)
+
+    - Disable Jenkins from starting on boot:
+   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day07/image/task5-1.png)
 
 6. **Analyze Logs:**
    - Use journalctl to analyze the logs of the Docker and Jenkins services. Post your findings.
 
    **Answer**
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day06/image/task1.png)
+    - Enable Docker to start on boot:
+   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day07/image/task6.png)
+
+    - Disable Jenkins from starting on boot:
+   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day07/image/task6-1.png)
