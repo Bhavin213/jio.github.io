@@ -6,7 +6,7 @@
    - Install Docker and Jenkins on your system from your terminal using package managers.
 
    **Answer**
-     - Installing Docker
+     - **Installing Docker**
        - Update the package list and install required packages:
          ```bash
             sudo apt update
@@ -27,7 +27,7 @@
          ```bash
             sudo systemctl status docker
 
-     - Installing Jenkins
+     - **Installing Jenkins**
        - Add the Jenkins repository key to the system:
          ```bash
             curl -fsSL https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
