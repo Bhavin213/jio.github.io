@@ -43,7 +43,14 @@
        - Start Jenkins:
          ```bash
             sudo systemctl start jenkins
-                                                        
+       - Note:
+         - First, check whether JAVA is installed or not.
+           ```bash
+              java -version
+         - If you have not installed
+           ```bash
+              sudo apt install default-jre
+
    ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day06/image/task1.png)
 
 2. **Write a Blog or Article:**
